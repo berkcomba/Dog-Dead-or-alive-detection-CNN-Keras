@@ -20,7 +20,7 @@ https://drive.google.com/open?id=1FvFkaU0wYGTj3kjTCnc76YVx_xty8qsw --(Dead dog i
 # Architecture
 
 
-I use implamentation a ResNet in Keras where shown in this video.
+I use "implamentation a ResNet in Keras" where shown in this video.
 https://www.youtube.com/watch?v=qMFKsMeE6fM
 
 
