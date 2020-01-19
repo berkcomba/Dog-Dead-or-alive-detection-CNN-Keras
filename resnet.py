@@ -25,12 +25,15 @@ from keras import layers
 from keras import models
 from keras import regularizers
 
-#hatalari engellemek icin gpu memory sinirlandirmasi
+#Gpu mamory allocation for reduce some errors couse by Cuda Version you can skip it.
+"""
 config = ConfigProto()
 #config.gpu_options.allow_growth = True
 config.gpu_options.per_process_gpu_memory_fraction = 0.6
 session = InteractiveSession(config=config)
+"""
 
+#Data preprocessing
 labelsc = []
 xcmin=[]
 xcmax=[]
@@ -121,7 +124,7 @@ testshow = test_images.copy()
 
 
 
-
+#model--
 
 import tensorflow.keras
 from tensorflow.keras.layers import Dense, Conv2D, BatchNormalization, Activation
@@ -522,6 +525,7 @@ val_acc=history_dict["val_acc"]
 
 epochs = range(1,len(loss_value)+1)
 
+"""
 
 plt.plot(epochs,loss_value,"bo",label="Train loss")
 plt.plot(epochs, val_loss_values,"b" , label="acc loss")
@@ -539,6 +543,7 @@ plt.ylabel("Loss")
 plt.legend()
 plt.show()
 
+#show 25 images and predict their labels..
 for i in range(0,25):
     plt.imshow(testshow[i])
     plt.show()
@@ -546,14 +551,14 @@ for i in range(0,25):
     if abs(x[0,0]-x[0,1])>0:
         a=np.argmax(max(x))
         if a==0:
-            print("telef")
+            print("dead")
         elif a==1:
-            print("canli")        
+            print("alive")        
     else:
         print("not sure!")
 
-"""
-save and load model
+
+#save and load model
 model.save('canlitelef.h5')
 from tensorflow.keras.models import load_model
 model = load_model('canlitelef.h5') 
