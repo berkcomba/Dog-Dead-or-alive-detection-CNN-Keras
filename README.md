@@ -1,7 +1,6 @@
 # Dog-Dead-or-alive-detection-CNN-Keras
 The CNN model that classifies the dog images as dead or alive.
 
-This is a small project that I will use in my senior project. 
 
 ![alt_img](./image.png)<br>
 
