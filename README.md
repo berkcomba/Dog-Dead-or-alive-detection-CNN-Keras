@@ -14,6 +14,7 @@ Dataset contains 200 images per each class. You can download from links below. J
 
 https://drive.google.com/open?id=1ZCAwGpDk7UPeqH8gZ2y-BCCucJ97HdRA --(Live dog images) ~37mb
 https://drive.google.com/open?id=1FvFkaU0wYGTj3kjTCnc76YVx_xty8qsw --(Dead dog images) ~19mb
+Ps: I'm still collecting images from internet. I'm going to re-upload the dataset periodicly.
 
 
 # Architecture
