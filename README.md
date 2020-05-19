@@ -24,4 +24,4 @@ I use "implamentation a ResNet in Keras" where shown in this video.
 https://www.youtube.com/watch?v=qMFKsMeE6fM
 
 
-
+ 
